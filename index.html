@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <script>
+       var count = localStorage.getItem("count") >= 0 ? localStorage.getItem("count") : 0;
+       count++;
+       localStorage.setItem("count", count);
+    </script>
+  </head>
+  <body>
+    <script>
+       var p = document.createElement("p");
+       p.appendChild(document.createTextNode(getViewCount()));              
+       document.body.appendChild(p); 
+       var btn = document.createElement("button");
+       btn.appendChild(document.createTextNode("Reset"));
+       btn.onclick = function(){
+          localStorage.setItem("count", 0);
+          count = 0;
+          p.innerHTML = getViewCount();
+       }
+       document.body.appendChild(btn);
+       function getViewCount(){
+          return "View count: " + count;
+       };
+    </script>
+  </body>
+</html>
