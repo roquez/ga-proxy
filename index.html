@@ -10,10 +10,9 @@
   </head>
   <body>
     <script>
-       var p = document.createElement("p");
+       var p = document.createElement("p"), btn = document.createElement("button");
        p.appendChild(document.createTextNode(getViewCount()));              
        document.body.appendChild(p); 
-       var btn = document.createElement("button");
        btn.appendChild(document.createTextNode("Reset"));
        btn.onclick = function(){
           localStorage.setItem("count", 0);
