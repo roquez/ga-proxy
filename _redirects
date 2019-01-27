@@ -1,4 +1,4 @@
 /analytics/*  https://www.google-analytics.com/:splat  200
-/as/r/c*       https://www.google-analytics.com/r/collect:splat  200
-/as/c*         https://www.google-analytics.com/collect:splat  200
+/analytics/r/clt*       https://www.google-analytics.com/r/collect:splat  200
+/analytics/clt*         https://www.google-analytics.com/collect:splat  200
 /as/*          https://www.google-analytics.com/:splat  200
